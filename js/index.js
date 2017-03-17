@@ -2,14 +2,15 @@
 var utils = require('./utils')
 
 // Get templates
-var header = require('../partials/header.html')
-var footer = require('../partials/footer.html')
+var header = document.createElement('div')
+header.innerHTML = require('../partials/header.html')
+var footer = document.createElement('div')
+footer.innerHTML = require('../partials/footer.html')
 
 // Add header and footer to document
-var body = document.getElementsByTagName('body')
-if (body.length) {
-  body[0].innerHTML = header + body[0].innerHTML + footer
-}
+var body = document.body || document.getElementsByTagName('body')[0]
+body.prepend(header)
+body.appendChild(footer)
 
 // Add event listener to navbar toggle button
 var navbarToggle = document.getElementsByClassName('gobmx-header-navbar-collapse')
@@ -26,3 +27,12 @@ if (navbarToggleButton.length && navbarToggle.length) {
     utils.toggleClass(navbarToggleButton, 'gobmx-collapsed')
   })
 }
+
+// jQuery(document).ready(function ($) {
+//   var script = 'https://cdn.rawgit.com/markotom/gobmx-branding/2becfa62/dist/gobmx.min.js';
+
+//   $.getScript(script).done(function () {
+//     $('.gobmx-footer').appendTo('#wrapper-content');
+//   });
+// });
+
