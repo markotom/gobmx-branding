@@ -4,6 +4,7 @@
   "description": "Add gob.mx branding",
   "main": "webpack.config.js",
   "scripts": {
+    "build": "webpack -p --config ./webpack.production.config.js",
     "watch": "webpack-dev-server --compress --progress --color"
   },
   "author": "Marco Godínez <markotom@gmail.com>",
