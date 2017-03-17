@@ -1,0 +1,33 @@
+{
+  "name": "gobmx-branding",
+  "version": "0.1.0",
+  "description": "Add gob.mx branding",
+  "main": "webpack.config.js",
+  "scripts": {
+    "watch": "webpack-dev-server --compress --progress --color"
+  },
+  "author": "Marco Godínez <markotom@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markotom/gobmx-branding.git"
+  },
+  "bugs": {
+    "url": "https://github.com/markotom/gobmx-branding/issues"
+  },
+  "homepage": "https://github.com/markotom/gobmx-branding#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "css-loader": "^0.27.3",
+    "file-loader": "^0.10.1",
+    "html-loader": "^0.4.5",
+    "img-loader": "^2.0.0",
+    "less": "^2.7.2",
+    "less-loader": "^3.0.0",
+    "style-loader": "^0.14.1",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2",
+    "webpack-inject-css-loader": "^0.1.0"
+  }
+}
